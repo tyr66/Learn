@@ -1,0 +1,24 @@
+
+  - [CS106L](https://web.stanford.edu/class/archive/cs/cs106l/cs106l.1212/lectures.html)
+  - 输入输出流(Input,output Stream)
+    - [Input/Output Library](https://en.cppreference.com/w/cpp/io)
+    - [Stream Manipulator](https://cplusplus.com/reference/library/manipulators/)
+    - [stream bits](https://en.cppreference.com/w/cpp/io/ios_base/iostate)
+  - 操作符重载 , 复制构造函数 , 赋值操作符 ,move 操作符
+    - [Operator Overloading](https://en.cppreference.com/w/cpp/language/operators)
+    - [What are copy elision and return value optimization?](https://stackoverflow.com/questions/12953127/what-are-copy-elision-and-return-value-optimization/12953145#12953145)
+  - 函数指针, Lambda ,Functor
+    - [Lambda](https://en.cppreference.com/w/cpp/language/lambda)
+    - [Lambda Functions in C++11 - the Definitive Guide](https://www.cprogramming.com/c++11/c++11-lambda-closures.html)
+    - [Functors](https://www.cprogramming.com/tutorial/functors-function-objects-in-c++.html)
+  - 容器(Containers), 迭代器(Iterator), 容器适配器(Conatiner Adpater) ,算法(Algorithms)
+    - [decltype](https://en.cppreference.com/w/cpp/language/decltype)
+    - [What is the role of std::forward_iterator_tag?](https://stackoverflow.com/questions/17422915/what-is-the-role-of-stdforward-iterator-tag)
+    - [std::conditional](https://en.cppreference.com/w/cpp/types/conditional)
+    - [Containers And Container Adaptors](https://en.cppreference.com/w/cpp/container)
+    - [iterator](https://en.cppreference.com/w/cpp/iterator/iterator)
+    - [Algorithms ](https://en.cppreference.com/w/cpp/algorithm)
+    - [Iteraotr Adapter](http://www.ccplusplus.com/2014/01/iterator-adaptor-c.html)
+  - 杂项
+    - [Range Based for Loop](https://en.cppreference.com/w/cpp/language/range-for)
+    - [auto 关键字](https://en.cppreference.com/w/cpp/keyword/auto)

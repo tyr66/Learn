@@ -1,0 +1,14 @@
+# Visual Studio cache directory
+.vs/
+ 
+# Visual Studio Code cache directory
+.vscode/
+
+# 忽略所有目录下的 Resources 文件夹 ，里面通常包含有pdf等资料
+**/Resources
+ 
+# 忽略所有的pdf文件
+*.pdf
+
+# 忽略所有exe文件
+*.exe
