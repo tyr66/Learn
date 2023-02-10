@@ -36,4 +36,10 @@ public:
         
         return res;
     }
+
 };
+
+int main()
+{
+  std::cout << "kslf" <<std::endl;
+}

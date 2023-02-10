@@ -33,6 +33,7 @@ int GetUglyNumber_Solution(int index)
 
 int main()
 {
+    std::cout << "skldf" << std::endl;
 
     return 0;
 }
