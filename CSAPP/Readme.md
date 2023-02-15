@@ -1,5 +1,12 @@
 # CSAPP
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [参考资料](#参考资料)
+
+<!-- vim-markdown-toc -->
+
 ## 参考资料
 - [课程主页](http://www.cs.cmu.edu/afs/cs/academic/class/15213-f22/www/index.html)
 - [全英文视频课程](https://www.bilibili.com/video/av40238125/?vd_source=bb33286cda74be54bbcdf853e121e4f7)
