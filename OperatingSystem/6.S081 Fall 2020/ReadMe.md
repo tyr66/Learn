@@ -293,3 +293,38 @@ OBJS = \
 
 ### 实验结果
 ![](pic/lab9.PNG)
+
+## Lay 10 mmap
+
+注意点
+
+```c
+void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
+```
+
+-  You can assume that addr will always be zero, meaning that the kernel should decide the virtual address at which to map the file
+-  mmap returns that address, or 0xffffffffffffffff if it fails.
+- length is the number of bytes to map; it might not be the same as the file's length.
+- prot indicates whether the memory should be mapped readable, writeable, and/or executable; you can assume that prot is PROT_READ or PROT_WRITE or both
+- flags will be either MAP_SHARED, meaning that modifications to the mapped memory should be written back to the file, or MAP_PRIVATE, meaning that they should not. 
+- fd is the open file descriptor of the file to map
+- You can assume offset is zero
+
+```c
+munmap(addr, length)
+```
+
+- should remove mmap mappings in the indicated address range
+- If the process has modified the memory and has it mapped MAP_SHARED, the modifications should first be written to the file.
+- An munmap call might cover only a portion of an mmap-ed region, but you can assume that it will either unmap at the start, or at the end, or the whole region (but not punch a hole in the middle of a region).
+
+**重点在于搞清楚什么时候uvmunmap页表的项, 以及uvmunmap几个页表的项(特别是在实现munmap系统调用的时候)**
+
+修改点
+
+- 实验 mmap 以及 munmap系统调用
+- 修改 kernel/proc.c 中的 exit 以及 fork函数的实现
+- 修改 kernel/vm.c 中 uvmunmap 函数的实现使其遇到一个没有被映射到页表的项时不会panic
+
+### 实验结果
+![](pic/lab10.PNG)

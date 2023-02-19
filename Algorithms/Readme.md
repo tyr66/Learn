@@ -11,6 +11,7 @@
 - [The Algorithms 一些算法的实现](https://the-algorithms.com/)
 - [前缀树](https://zhuanlan.zhihu.com/p/28891541)
 - [三分算法](https://codeantenna.com/a/8QLI5mtuYk)
+- [OI Wiki](https://oi-wiki.org/)
 
 
 ## 刷题汇总
