@@ -14,3 +14,7 @@
 - [小土刀的博客](https://wdxtub.com/work/)
 - [CSAPP重点解读](https://fengmuzi2003.gitbook.io/csapp3e/)
 - [CSAPP-深入理解计算机系统](https://www.bilibili.com/video/BV1cD4y1D7uR/?vd_source=bb33286cda74be54bbcdf853e121e4f7)
+
+## 算术运算的特性
+1. 整型运算可能会导致溢出,例如多个正整数相乘可能会得到一个负数
+2. 浮点数运算也会溢出, 但是多个正浮点数相乘溢出后的结果是 $+\infty$, 而不会导致负数

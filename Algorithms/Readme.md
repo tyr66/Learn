@@ -25,4 +25,16 @@
 ![](pic/huffman编码.png)
 
 
+## 图相关算法
+
+### 单源寻路算法
+[Bellman-Ford Algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm)
+[Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+
+### 多源寻路算法
+[Floyd-Warshall Algorithm](https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_Algorithm#cite_note-10)
+
+### 最小生成树
+[Prim's Algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
+[Kruskal's Algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
 
