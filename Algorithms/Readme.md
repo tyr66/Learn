@@ -38,3 +38,17 @@
 [Prim's Algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
 [Kruskal's Algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
 
+
+## 差分约束
+[差分约束系统](https://blog.csdn.net/runninghui/article/details/9137673)
+[oi wiki 差分约束](https://oi-wiki.org/graph/diff-constraints/)
+
+## 最大公约数
+[欧几里得算法(辗转相除法)](https://zh.wikipedia.org/wiki/%E8%BC%BE%E8%BD%89%E7%9B%B8%E9%99%A4%E6%B3%95)
+
+## 素数筛选
+[素性测试](https://zh.wikipedia.org/zh-hans/%E7%B4%A0%E6%80%A7%E6%B5%8B%E8%AF%95)
+[埃式筛法](https://zh.wikipedia.org/zh-hans/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95)
+
+## 快速幂运算
+[快速幂运算](https://oi-wiki.org/math/binary-exponentiation/)
