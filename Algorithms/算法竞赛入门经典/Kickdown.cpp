@@ -34,12 +34,7 @@ int get_length(string& a, string& b)
         }
     }
 
-    if (!is_find)
-    {
-        return a.size() + b.size();
-    }
-
-    return len;
+    return a.size() + b.size();
 }
 
 int main()
@@ -48,9 +43,7 @@ int main()
 
     while (cin >> a && cin >> b)
     {
-        if (a.size() < b.size())
-                 swap(a, b);
-
+        cout << min(get_length(a, b), get_length(b, a)) << endl;
     }
     return 0;
 } 
