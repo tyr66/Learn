@@ -24,7 +24,7 @@ string rotateY(string&str)
     res[4] = str[3];
     res[3] = str[1];
     res[1] = str[2];
-    res[2] = str[4];
+
     return res;
 }
 
