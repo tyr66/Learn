@@ -58,4 +58,4 @@ UI矩形的四个顶点会和Anchor矩形的四个顶点保持固定的距离, �
 
 ## 参考链接
 
-- [Unity进阶技巧 - RectTransform详解](https://www.jianshu.com/p/dbefa746e50d)
+- [Unity进阶技巧 - RectTransform详解](https://www.jianshu.com/p/4592bf809c8b)
