@@ -10,7 +10,7 @@ https://www.zhihu.com/question/451547303/answer/2001870953)
 
 - [像素，图像分辨率，屏幕分辨率](https://www.zhihu.com/question/21149600/answer/29971490)
 - [Unity UGUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html)
-- [Unity RectTransform组件详解](/RectTransform组件解析.md)
+- [Unity RectTransform组件详解](RectTransform组件解析.md)
 - [设计适应不同屏幕分辨率的UI](https://zhuanlan.zhihu.com/p/100842584)
 - [Designing UI for Multiple Resolutions](https://docs.unity.cn/2021.3/Documentation/Manual/HOWTO-UIMultiResolution.html)
 - [Sorting Layers and Sorting Order Explained (Unity 2D)](https://www.youtube.com/watch?v=5_BwFB-1dAo)
