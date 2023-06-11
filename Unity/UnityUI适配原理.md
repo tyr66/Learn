@@ -49,7 +49,7 @@ FixedWidth 和 FixedHeight 的区别在于固定的是宽度还是高度。如�
 
 # Unity 中的UI适配
 
-Unity 是通过Pivot，Anchor， Canvas Scaler来进行UI的布局和大小适配.其中Canvas Scaler 用来处理UI元素的缩放。
+Unity 是通过Pivot，Anchor， Canvas Scaler来进行UI的布局和大小适配.其中Canvas Scaler 用来处理UI元素的缩放。而Pivot ，Anchor则用来进行UI的布局.
 
 ## UI Scale Mode
 

@@ -2,13 +2,15 @@
 
 <!-- markdown-toc GFM -->
 
-* [Pivot](#pivot)
-* [Anchors](#anchors)
-* [Inspctor中Pivot, Anchor,以及Position之间的关系](#inspctor中pivot-anchor以及position之间的关系)
-    * [情形一：Anchor两个点重合时](#情形一anchor两个点重合时)
-    * [情形二：Anchor两个点不互相重合时](#情形二anchor两个点不互相重合时)
-* [RectTransform组件的自动属性计算](#recttransform组件的自动属性计算)
-* [参考链接](#参考链接)
+- [RectTransform 组件解析](#recttransform-组件解析)
+  - [Pivot](#pivot)
+  - [Anchors](#anchors)
+    - [Anhors的状态](#anhors的状态)
+  - [Inspctor中Pivot, Anchor,以及Position之间的关系](#inspctor中pivot-anchor以及position之间的关系)
+    - [情形一：Anchor两个点重合时](#情形一anchor两个点重合时)
+    - [情形二：Anchor两个点不互相重合时](#情形二anchor两个点不互相重合时)
+  - [RectTransform组件的自动属性计算](#recttransform组件的自动属性计算)
+  - [参考链接](#参考链接)
 
 <!-- markdown-toc -->
 
@@ -24,10 +26,13 @@ Anchor锚框是由两个锚点(Min，Max)组成的一个矩形，如下所示
 
 ![](pic/UGUI/1.png)
 
-- Anchor Max: 锚框右上角的点在父物体中的坐标，坐标原点在父物体的左下角,坐标范围在[0,1]
-- Anchor Min: 锚框左下角的点在父物体中的坐标，坐标原点在父物体的左下角,坐标范围在[0,1]
+- Anchor Max: 锚框右上角的点在父物体中的坐标，坐标原点在父物体的左下角,坐标范围在[0,1], 默认值为[0.5, 0.5] 位于父物体中心
+- Anchor Min: 锚框左下角的点在父物体中的坐标，坐标原点在父物体的左下角,坐标范围在[0,1], 默认值为[0.5, 0.5] 位于父物体中心
 
-UI矩形的四个顶点会和Anchor矩形的四个顶点保持固定的距离, 如下所示
+
+### Anhors的状态
+
+在锚框状态下，UI的四个顶点会和Anchor矩形的四个顶点保持固定的距离, 如下所示
 
 ![](pic/UGUI/3.gif)
 ![](pic/UGUI/1.gif)
