@@ -11,16 +11,16 @@ struct TreeNode
 TreeNode* get_lowestCommonAncestor(TreeNode *node,int o1,int o2)
 {
     if(node == nullptr||node->val == o1||node->val == o2)
-    return node;
+      return node;
 
     TreeNode* left = get_lowestCommonAncestor(node->left,o1,o2);
     TreeNode* right = get_lowestCommonAncestor(node->right,o1,o2);
 
     if(left == nullptr)
-    return right;
+      return right;
 
     if(right == nullptr)
-    return left;
+      return left;
 
     return nullptr;
 }

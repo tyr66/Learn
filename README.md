@@ -35,6 +35,9 @@
   - [neovim lua 安装配置教程](https://github.com/nanofrog/learn-neovim-lua)
   - [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a)
   - [Vim cheat Sheet](https://vim.rtorr.com/lang/zh_cn)
+  - [Language Server Protcol specification](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/)
+  - [vim 中的基础概念讲解](https://zhuanlan.zhihu.com/p/96801314)
+  - [yaocccc 的nvim 配置](https://github.com/yaocccc/nvim)
 
 - wsl
   - [如何在wsl中传输文件到Linux](https://learn.microsoft.com/zh-cn/windows/wsl/filesystems)

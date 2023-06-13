@@ -8,6 +8,8 @@
   - [lab讲解](https://www.bilibili.com/video/BV1ou41127p9/)
   - [xv6 Kernel 讲解xv6的视频讲解](https://www.youtube.com/watch?v=RdxHGyeoyqI&list=PLbtzT1TYeoMhTPzyTZboW_j7TPAnjv9XB&index=6)
   - [MIT 6.S081 xv6调试不完全指北](https://www.cnblogs.com/KatyuMarisaBlog/p/13727565.html)
+  - [使用GDB Debug](http://xv6.dgs.zone/tranlate_books/Use%20GUN%20Debugger.html)
+  - [Fall2020/6.S081-如何在 QEMU 中使用 gdb](https://zhuanlan.zhihu.com/p/342402097)
 -----------
 
 ## 环境配置
@@ -259,6 +261,70 @@ OBJS = \
 - 锁的释放顺序要和获取顺序相反
 - 在 Buffer cache 实验中需要注意当同时有两个线程使用相同的参数 (dev,blockno )去调用 bget 函数时有可能会导致 buf 的重分配
 
-
 ### 实验结果
 ![](pic/lab8.PNG)
+
+
+## Lab9 file system
+
+### Large files
+
+需要修改的部分
+- fs.c/bmap  函数
+- fs.c/iturnc 函数
+
+注意点
+- bmap 函数中 如果更新了block(例如为inode新增block), 则必须调用 log_write 将修改写入到对应的disk block 中.
+- bmap 以及 iturnc函数中每使用完一个block记得调用 brelse 函数将其释放掉
+- 在iturnc 函数中在调用bfree函数释放一个block之前要记得先调用brelse函数使用掉对应block的锁,否则会出现死锁
+
+### Symbolic links 
+
+需要修改的部分
+- 修改stat.h
+- 修改fcntl.h
+- 添加 symlink系统调用
+- 修改 open系统调用
+
+注意点
+- 当调用了iget函数后会递增inode 的 引用计数需要调用对应的 iput 函数来减少对引用计数
+- 在访问inode 的数据时需要确保inode 的数据是最新的给予硬盘中的数据保持一致,通过调用ilock函数,lock函数会检查inode 的vailed字段来检查当前的inode 是否具有数据一致性.
+- 在实现 sys_symlink 系统调用时注意新创建的符号文件对应的inode.nlink 字段需要初始化为1
+
+### 实验结果
+![](pic/lab9.PNG)
+
+## Lay 10 mmap
+
+注意点
+
+```c
+void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
+```
+
+-  You can assume that addr will always be zero, meaning that the kernel should decide the virtual address at which to map the file
+-  mmap returns that address, or 0xffffffffffffffff if it fails.
+- length is the number of bytes to map; it might not be the same as the file's length.
+- prot indicates whether the memory should be mapped readable, writeable, and/or executable; you can assume that prot is PROT_READ or PROT_WRITE or both
+- flags will be either MAP_SHARED, meaning that modifications to the mapped memory should be written back to the file, or MAP_PRIVATE, meaning that they should not. 
+- fd is the open file descriptor of the file to map
+- You can assume offset is zero
+
+```c
+munmap(addr, length)
+```
+
+- should remove mmap mappings in the indicated address range
+- If the process has modified the memory and has it mapped MAP_SHARED, the modifications should first be written to the file.
+- An munmap call might cover only a portion of an mmap-ed region, but you can assume that it will either unmap at the start, or at the end, or the whole region (but not punch a hole in the middle of a region).
+
+**重点在于搞清楚什么时候uvmunmap页表的项, 以及uvmunmap几个页表的项(特别是在实现munmap系统调用的时候)**
+
+修改点
+
+- 实验 mmap 以及 munmap系统调用
+- 修改 kernel/proc.c 中的 exit 以及 fork函数的实现
+- 修改 kernel/vm.c 中 uvmunmap 函数的实现使其遇到一个没有被映射到页表的项时不会panic
+
+### 实验结果
+![](pic/lab10.PNG)
