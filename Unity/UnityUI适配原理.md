@@ -51,7 +51,7 @@ FixedWidth 和 FixedHeight 的区别在于固定的是宽度还是高度。如�
 
 Unity 是通过Pivot，Anchor， Canvas Scaler来进行UI的布局和大小适配.其中Canvas Scaler 用来处理UI元素的缩放。而Pivot ，Anchor则用来进行UI的布局.
 
-## UI Scale Mode
+## Canvas Scaler 的 UI Scale Mode
 
 ![](pic/17.png)
 
@@ -59,14 +59,13 @@ Unity 是通过Pivot，Anchor， Canvas Scaler来进行UI的布局和大小适�
 - Constant Physical Size - 无论在什么分辨率下都保持UI元素的实际大小不变
 - Scale With Screen Size - 根据实际的屏幕分辨率来缩放UI元素
 
-## Scale With Screen Size 下的缩放方式
+## Canvas Scaler 的 Scale With Screen Size 下的缩放方式
 
 ![](pic/16.png)
 
 - Expand - 该模式确保全部UI元素不会被裁剪，使用的是 ShowAll 模式来进行UI元素的缩放
 - Shrink - 该模式确保画面不会有空隙, 使用的是NoBorder 模式来进行UI元素的缩放
 - Match Width or Height - 当Match的数值为0时，Unity会根据ScaleX 来进行UI元素的缩放，当Match的值为1时，Unity会根据ScaleY来进行UI元素的缩放. 当Match 的数值介于[0,1] 之间时则为两则的混合
-
 
 # 参考链接
 
