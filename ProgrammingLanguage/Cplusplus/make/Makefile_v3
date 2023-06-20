@@ -1,0 +1,14 @@
+GXX = g++
+TARGET = hello
+GXXFLAG = -c -Wall
+OBJ = main.o hello.o factorial.o
+
+$(TARGET) : $(OBJ)
+	$(GXX) -o $@ $^
+
+%.o : %.cpp
+	$(GXX) $(GXXFLAG) $< -o $@
+
+.PHONY : clean
+clean :
+	del *.o hello.exe

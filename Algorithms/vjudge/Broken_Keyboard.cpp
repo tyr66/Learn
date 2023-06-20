@@ -8,13 +8,15 @@ const int MAX = 100000 + 5;
 int next_char[MAX];
 char ch[MAX];
 
+void func();
+
 int main()
 {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     char c;
     int i = 1, prev = 0;
-    
+
     while (scanf("%s", ch + 1) == 1) 
     {
         int cur,last;
@@ -40,4 +42,10 @@ int main()
         cout << endl;
     }
     return 0;
+}
+
+
+void func()
+{
+  cout << "test" << endl;
 }
