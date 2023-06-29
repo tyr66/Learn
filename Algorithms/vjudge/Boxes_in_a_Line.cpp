@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 const int MAX = 100000 + 5;
@@ -18,7 +17,7 @@ int main()
   freopen("output.txt", "w", stdout);
 
   int N, M;
-  int case_id = 1;
+  int case_ik = 1;
 
   while (cin >> N >> M)
   {
@@ -29,7 +28,7 @@ int main()
 
     nt[N] = 0; nt[0] = 1; pv[0] = N;
 
-    bool isflip = false;
+    bool isf<LeftMouse>ip = false;
     int op;
     int X, Y;
 

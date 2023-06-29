@@ -1,0 +1,15 @@
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.csproj.AssemblyReference.cache
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.GeneratedMSBuildEditorConfig.editorconfig
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.AssemblyInfoInputs.cache
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.AssemblyInfo.cs
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.csproj.CoreCompileInputs.cache
+D:\learn\DesignPattern\code\bin\Debug\net7.0\code.exe
+D:\learn\DesignPattern\code\bin\Debug\net7.0\code.deps.json
+D:\learn\DesignPattern\code\bin\Debug\net7.0\code.runtimeconfig.json
+D:\learn\DesignPattern\code\bin\Debug\net7.0\code.dll
+D:\learn\DesignPattern\code\bin\Debug\net7.0\code.pdb
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.dll
+D:\learn\DesignPattern\code\obj\Debug\net7.0\refint\code.dll
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.pdb
+D:\learn\DesignPattern\code\obj\Debug\net7.0\code.genruntimeconfig.cache
+D:\learn\DesignPattern\code\obj\Debug\net7.0\ref\code.dll

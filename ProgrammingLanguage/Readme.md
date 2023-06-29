@@ -9,6 +9,7 @@
     * [程序集相关](#程序集相关)
     * [C# 反射和特性](#c-反射和特性)
     * [C# 关键字](#c-关键字)
+    * [杂项](#杂项)
 * [C++](#c-1)
     * [基础](#基础)
     * [编译链接](#编译链接)
@@ -61,6 +62,12 @@
 ## C# 关键字
 
 - [C# is as 关键字](https://github.com/fhlsteven/CLR_via_CSharp/blob/main/chapters/ch4_TypeFundamentals.md#%E4%BD%BF%E7%94%A8-c-%E7%9A%84-is-%E5%92%8C-as-%E6%93%8D%E4%BD%9C%E7%AC%A6%E6%9D%A5%E8%BD%AC%E5%9E%8B)
+
+## 杂项
+
+- [C#数据结构-静态构造函数 - 鹅厂程序小哥的文章 - 知乎](https://zhuanlan.zhihu.com/p/349092907)
+- [C# 的接口和抽象类](https://www.cnblogs.com/ronli/archive/2011/10/26/2224654.html)
+- [C# 的构造函数](https://github.com/fhlsteven/CLR_via_CSharp/blob/main/chapters/ch8_Methods.md#81-%E5%AE%9E%E4%BE%8B%E6%9E%84%E9%80%A0%E5%99%A8%E5%92%8C%E7%B1%BB%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B)
 
 ----------------------
 

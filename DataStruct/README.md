@@ -1,5 +1,6 @@
 
-# 数据结构专题
+# 数据结构
 
 - [并查集](./Implementation/union-set.md)
+
 
