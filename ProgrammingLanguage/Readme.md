@@ -76,6 +76,7 @@
 ## 基础
 
 - [变量的声明、定义、赋值和初始化有什么区别？ - wtngng的回答 - 知乎]( https://www.zhihu.com/question/27639400/answer/489853106)
+- [C++ 三五法则](https://smartkeyerror.oss-cn-shenzhen.aliyuncs.com/Psyduck/C%2B%2B/copy-control/4.%20%E4%B8%89%E4%BA%94%E6%B3%95%E5%88%99.pdf)
 
 ## 编译链接
 
