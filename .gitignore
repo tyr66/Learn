@@ -4,6 +4,11 @@
 # Visual Studio Code cache directory
 .vscode/
 
+bin/
+obj/
+
+*.csproj
+
 # 忽略所有目录下的 Resources 文件夹 ，里面通常包含有pdf等资料
 **/Resources
  
