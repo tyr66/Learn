@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build",
+  "command": "D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DTBB_USE_DEBUG -external:ID:\\worksoftware\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /FoCMakeFiles\\main.dir\\main.cpp.obj /FdCMakeFiles\\main.dir\\ /FS -c D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\main.cpp",
+  "file": "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
+}
+]

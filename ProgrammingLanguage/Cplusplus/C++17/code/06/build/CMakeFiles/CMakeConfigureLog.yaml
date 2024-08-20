@@ -1,0 +1,500 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/worksoftware/vs/IDE/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.37.32822.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-vllgtt"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-vllgtt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-vllgtt
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_92031\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_92031.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_92031.dir\\build
+        Building CXX object CMakeFiles/cmTC_92031.dir/CMakeCXXCompilerABI.cpp.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_92031.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vllgtt --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmAE9B.tmp
+        CMakeCXXCompilerABI.cpp
+        ?鈷? 鍖呭惈鏂囦欢:  D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\share\\cmake-3.26\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_92031.exe
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_92031.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_92031.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB023.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_92031.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_92031.dir/embed.manifest
+        RC Pass 1:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_92031.dir/manifest.res CMakeFiles\\cmTC_92031.dir/manifest.rc
+        LINK Pass 1:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_92031.dir\\objects1.rsp /out:cmTC_92031.exe /implib:cmTC_92031.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vllgtt\\cmTC_92031.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_92031.dir/intermediate.manifest CMakeFiles\\cmTC_92031.dir/manifest.res
+        MT:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_92031.dir/intermediate.manifest /out:CMakeFiles\\cmTC_92031.dir/embed.manifest /notify_update
+        RC Pass 2:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_92031.dir/manifest.res CMakeFiles\\cmTC_92031.dir/manifest.rc
+        FINAL LINK:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_92031.dir\\objects1.rsp /out:cmTC_92031.exe /implib:cmTC_92031.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vllgtt\\cmTC_92031.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_92031.dir/intermediate.manifest CMakeFiles\\cmTC_92031.dir/manifest.res
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/worksoftware/vcpkg/installed/x64-windows/share/tbb/TBBConfig.cmake:3 (find_dependency)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-8fjd0i"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-8fjd0i"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-8fjd0i
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_63631\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_63631.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_63631.dir\\build
+        Building CXX object CMakeFiles/cmTC_63631.dir/src.cxx.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_63631.dir\\src.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fjd0i --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB1F7.tmp
+        src.cxx
+        D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fjd0i\\src.cxx(1): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory
+        NMAKE : fatal error U1077: “D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_63631.dir\\src.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8fjd0i --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB1F7.tmp”: 返回代码“0x2”
+        Stop.
+        NMAKE : fatal error U1077: “D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_63631.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_63631.dir\\build”: 返回代码“0x2”
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/worksoftware/vcpkg/installed/x64-windows/share/tbb/TBBConfig.cmake:3 (find_dependency)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-czldr7"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-czldr7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-czldr7
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_69152\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_69152.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_69152.dir\\build
+        Building CXX object CMakeFiles/cmTC_69152.dir/CheckFunctionExists.cxx.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_69152.dir\\CheckFunctionExists.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czldr7 --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB2E1.tmp
+        CheckFunctionExists.cxx
+        Linking CXX executable cmTC_69152.exe
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_69152.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_69152.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB35F.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_69152.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_69152.dir/embed.manifest
+        RC Pass 1:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_69152.dir/manifest.res CMakeFiles\\cmTC_69152.dir/manifest.rc
+        LINK Pass 1:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_69152.dir\\objects1.rsp /out:cmTC_69152.exe /implib:cmTC_69152.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czldr7\\cmTC_69152.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_69152.dir/intermediate.manifest CMakeFiles\\cmTC_69152.dir/manifest.res
+        LINK Pass 1: command "D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_69152.dir\\objects1.rsp /out:cmTC_69152.exe /implib:cmTC_69152.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czldr7\\cmTC_69152.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_69152.dir/intermediate.manifest CMakeFiles\\cmTC_69152.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
+        NMAKE : fatal error U1077: “D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_69152.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_69152.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB35F.tmp”: 返回代码“0xffffffff”
+        Stop.
+        NMAKE : fatal error U1077: “D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_69152.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_69152.dir\\build”: 返回代码“0x2”
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/worksoftware/vcpkg/installed/x64-windows/share/tbb/TBBConfig.cmake:3 (find_dependency)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-p4aooz"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-p4aooz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-p4aooz
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_6a708\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_6a708.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_6a708.dir\\build
+        Building CXX object CMakeFiles/cmTC_6a708.dir/CheckFunctionExists.cxx.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_6a708.dir\\CheckFunctionExists.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p4aooz --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB439.tmp
+        CheckFunctionExists.cxx
+        Linking CXX executable cmTC_6a708.exe
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_6a708.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a708.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB4B7.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_6a708.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_6a708.dir/embed.manifest
+        RC Pass 1:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_6a708.dir/manifest.res CMakeFiles\\cmTC_6a708.dir/manifest.rc
+        LINK Pass 1:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a708.dir\\objects1.rsp /out:cmTC_6a708.exe /implib:cmTC_6a708.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p4aooz\\cmTC_6a708.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6a708.dir/intermediate.manifest CMakeFiles\\cmTC_6a708.dir/manifest.res
+        LINK Pass 1: command "D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a708.dir\\objects1.rsp /out:cmTC_6a708.exe /implib:cmTC_6a708.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p4aooz\\cmTC_6a708.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6a708.dir/intermediate.manifest CMakeFiles\\cmTC_6a708.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
+        NMAKE : fatal error U1077: “D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_6a708.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a708.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmB4B7.tmp”: 返回代码“0xffffffff”
+        Stop.
+        NMAKE : fatal error U1077: “D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_6a708.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_6a708.dir\\build”: 返回代码“0x2”
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/worksoftware/vs/IDE/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.37.32822 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.37.32822.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-x3ri5c"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-x3ri5c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-x3ri5c
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_54880\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_54880.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_54880.dir\\build
+        Building CXX object CMakeFiles/cmTC_54880.dir/CMakeCXXCompilerABI.cpp.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_54880.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x3ri5c --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmECC4.tmp
+        CMakeCXXCompilerABI.cpp
+        ?鈷? 鍖呭惈鏂囦欢:  D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\share\\cmake-3.26\\Modules\\CMakeCompilerABI.h
+        Linking CXX executable cmTC_54880.exe
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_54880.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_54880.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmED42.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_54880.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_54880.dir/embed.manifest
+        RC Pass 1:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_54880.dir/manifest.res CMakeFiles\\cmTC_54880.dir/manifest.rc
+        LINK Pass 1:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_54880.dir\\objects1.rsp /out:cmTC_54880.exe /implib:cmTC_54880.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x3ri5c\\cmTC_54880.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_54880.dir/intermediate.manifest CMakeFiles\\cmTC_54880.dir/manifest.res
+        MT:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_54880.dir/intermediate.manifest /out:CMakeFiles\\cmTC_54880.dir/embed.manifest /notify_update
+        RC Pass 2:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_54880.dir/manifest.res CMakeFiles\\cmTC_54880.dir/manifest.rc
+        FINAL LINK:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_54880.dir\\objects1.rsp /out:cmTC_54880.exe /implib:cmTC_54880.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x3ri5c\\cmTC_54880.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_54880.dir/intermediate.manifest CMakeFiles\\cmTC_54880.dir/manifest.res
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/worksoftware/vcpkg/installed/x64-windows/share/tbb/TBBConfig.cmake:3 (find_dependency)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-mviqda"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-mviqda"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-mviqda
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_8f1cd\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_8f1cd.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_8f1cd.dir\\build
+        Building CXX object CMakeFiles/cmTC_8f1cd.dir/src.cxx.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_8f1cd.dir\\src.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mviqda --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmEF16.tmp
+        src.cxx
+        D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mviqda\\src.cxx(1): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory
+        NMAKE : fatal error U1077: “D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_8f1cd.dir\\src.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mviqda --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmEF16.tmp”: 返回代码“0x2”
+        Stop.
+        NMAKE : fatal error U1077: “D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_8f1cd.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_8f1cd.dir\\build”: 返回代码“0x2”
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/worksoftware/vcpkg/installed/x64-windows/share/tbb/TBBConfig.cmake:3 (find_dependency)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-d0y5ca"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-d0y5ca"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-d0y5ca
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_09c0f\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_09c0f.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_09c0f.dir\\build
+        Building CXX object CMakeFiles/cmTC_09c0f.dir/CheckFunctionExists.cxx.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_09c0f.dir\\CheckFunctionExists.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d0y5ca --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmF000.tmp
+        CheckFunctionExists.cxx
+        Linking CXX executable cmTC_09c0f.exe
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_09c0f.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_09c0f.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmF07E.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_09c0f.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_09c0f.dir/embed.manifest
+        RC Pass 1:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_09c0f.dir/manifest.res CMakeFiles\\cmTC_09c0f.dir/manifest.rc
+        LINK Pass 1:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_09c0f.dir\\objects1.rsp /out:cmTC_09c0f.exe /implib:cmTC_09c0f.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d0y5ca\\cmTC_09c0f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_09c0f.dir/intermediate.manifest CMakeFiles\\cmTC_09c0f.dir/manifest.res
+        LINK Pass 1: command "D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_09c0f.dir\\objects1.rsp /out:cmTC_09c0f.exe /implib:cmTC_09c0f.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d0y5ca\\cmTC_09c0f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_09c0f.dir/intermediate.manifest CMakeFiles\\cmTC_09c0f.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
+        NMAKE : fatal error U1077: “D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_09c0f.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_09c0f.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmF07E.tmp”: 返回代码“0xffffffff”
+        Stop.
+        NMAKE : fatal error U1077: “D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_09c0f.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_09c0f.dir\\build”: 返回代码“0x2”
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/worksoftware/scoop/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/worksoftware/vcpkg/installed/x64-windows/share/tbb/TBBConfig.cmake:3 (find_dependency)"
+      - "D:/worksoftware/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-ieuxti"
+      binary: "D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-ieuxti"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "D:/worksoftware/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/worksoftware/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/06/build/CMakeFiles/CMakeScratch/TryCompile-ieuxti
+        
+        Run Build Command(s):D:/worksoftware/scoop/apps/cmake/3.26.4/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_ddf64\\fast && 	D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_ddf64.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ddf64.dir\\build
+        Building CXX object CMakeFiles/cmTC_ddf64.dir/CheckFunctionExists.cxx.obj
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_ddf64.dir\\CheckFunctionExists.cxx.obj.d --working-dir=D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ieuxti --filter-prefix="注意: 包含文件:  " -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\18470\\AppData\\Local\\Temp\\nmF158.tmp
+        CheckFunctionExists.cxx
+        Linking CXX executable cmTC_ddf64.exe
+        	D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ddf64.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ddf64.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmF1D6.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_ddf64.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_ddf64.dir/embed.manifest
+        RC Pass 1:
+        D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_ddf64.dir/manifest.res CMakeFiles\\cmTC_ddf64.dir/manifest.rc
+        LINK Pass 1:
+        D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ddf64.dir\\objects1.rsp /out:cmTC_ddf64.exe /implib:cmTC_ddf64.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ieuxti\\cmTC_ddf64.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ddf64.dir/intermediate.manifest CMakeFiles\\cmTC_ddf64.dir/manifest.res
+        LINK Pass 1: command "D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ddf64.dir\\objects1.rsp /out:cmTC_ddf64.exe /implib:cmTC_ddf64.lib /pdb:D:\\learn\\ProgrammingLanguage\\Cplusplus\\C++17\\code\\06\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ieuxti\\cmTC_ddf64.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ddf64.dir/intermediate.manifest CMakeFiles\\cmTC_ddf64.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
+        NMAKE : fatal error U1077: “D:\\worksoftware\\scoop\\apps\\cmake\\3.26.4\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ddf64.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22000.0\\x64\\mt.exe" --manifests -- D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ddf64.dir\\objects1.rsp @C:\\Users\\18470\\AppData\\Local\\Temp\\nmF1D6.tmp”: 返回代码“0xffffffff”
+        Stop.
+        NMAKE : fatal error U1077: “D:\\worksoftware\\vs\\IDE\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_ddf64.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ddf64.dir\\build”: 返回代码“0x2”
+        Stop.
+        
+      exitCode: 2
+...

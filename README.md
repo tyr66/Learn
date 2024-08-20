@@ -16,15 +16,8 @@
   - [Git](Git/Readme.md)
   - [.gitignore文件的配置使用](https://zhuanlan.zhihu.com/p/52885189)
 
-- 网络完全
-  - [跨站请求伪造](https://zh.wikipedia.org/zh-my/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)
-
-- 杂项
-  - [美化网页的CSS框架bootstrap](https://getbootstrap.com/docs/5.1/content/figures/)
+- 网络
   - [什么是dotfile](https://luolei.org/dotfiles-tutorial/)
-  - [Jupyter](https://jupyter.org/try)
-  - [ggplot2](https://ggplot2.tidyverse.org/)
-  - [什么是SSH](https://zh.wikipedia.org/wiki/Secure_Shell)
   - [字符编码](https://zhuanlan.zhihu.com/p/38333902)
   - [正则表达式练习](https://regexone.com/)
 

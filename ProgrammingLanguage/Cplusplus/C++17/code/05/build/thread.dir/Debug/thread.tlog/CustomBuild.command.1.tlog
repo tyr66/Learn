@@ -1,0 +1,10 @@
+^D:\LEARN\PROGRAMMINGLANGUAGE\CPLUSPLUS\C++17\CODE\05\CMAKELISTS.TXT
+setlocal
+D:\worksoftware\scoop\apps\cmake\3.26.4\bin\cmake.exe -SD:/learn/ProgrammingLanguage/Cplusplus/C++17/code/05 -BD:/learn/ProgrammingLanguage/Cplusplus/C++17/code/05/build --check-stamp-file D:/learn/ProgrammingLanguage/Cplusplus/C++17/code/05/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

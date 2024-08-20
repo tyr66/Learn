@@ -77,6 +77,8 @@
 
 - [变量的声明、定义、赋值和初始化有什么区别？ - wtngng的回答 - 知乎]( https://www.zhihu.com/question/27639400/answer/489853106)
 - [C++ 三五法则](https://smartkeyerror.oss-cn-shenzhen.aliyuncs.com/Psyduck/C%2B%2B/copy-control/4.%20%E4%B8%89%E4%BA%94%E6%B3%95%E5%88%99.pdf)
+- [C++11特性-初始化列表](https://hellozhaozheng.github.io/z_post/Cpp-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8/)
+- [C++中的聚合初始化](https://blog.guorongfei.com/2016/03/13/cpp-aggregate-initlization/)
 
 ## 编译链接
 
@@ -85,7 +87,9 @@
 
 ## make和cmake
 
-- [cmake中的子模块](https://www.bilibili.com/video/BV1fa411r7zp/?spm_id_from=333.788&vd_source=bb33286cda74be54bbcdf853e121e4f7/?t=0h44m15s)
+- [cmake中的子模块]
+
+(https://www.bilibili.com/video/BV1fa411r7zp/?spm_id_from=333.788&vd_source=bb33286cda74be54bbcdf853e121e4f7/?t=0h44m15s)
 - [cmake：target_** 中的 PUBLIC，PRIVATE，INTERFACE - 大川搬砖的文章 - 知乎]( https://zhuanlan.zhihu.com/p/82244559)
 
 # 参考链接
