@@ -174,7 +174,7 @@ NOTES:
  *   Rating: 1
  */
 int bitXnor(int x, int y) {
-  return 2;
+  return ~(x | y) | ~(~x | ~y);
 }
 /* 
  * bitConditional - x ? y : z for each bit respectively
@@ -184,7 +184,7 @@ int bitXnor(int x, int y) {
  *   Rating: 1
  */
 int bitConditional(int x, int y, int z) {
-  return 2;
+  return (x & y) | (~x & z);
 }
 /* 
  * byteSwap - swaps the nth byte and the mth byte
@@ -196,7 +196,14 @@ int bitConditional(int x, int y, int z) {
  *  Rating: 2
  */
 int byteSwap(int x, int n, int m) {
-    return 2;
+    int noffset = n << 3;
+    int moffset = m << 3;
+    int mask = (0xff << noffset) | (0xff << moffset);
+
+    int swapbits = ((x >> noffset & 0xff) << moffset )| ((x >> moffset & 0xff) << noffset);
+
+    return bitConditional(mask, swapbits, x);
+
 }
 /* 
  * logicalShift - shift x to the right by n, using a logical shift
@@ -207,7 +214,7 @@ int byteSwap(int x, int n, int m) {
  *   Rating: 3
  */
 int logicalShift(int x, int n) {
-  return 2;
+    return (~(1 << 31 >> n << 1)) & (x >> n);
 }
 /* 
  * cleanConsecutive1 - change any consecutive 1 to zeros in the binary form of x.
@@ -221,7 +228,9 @@ int logicalShift(int x, int n) {
  *   Rating: 4
  */
 int cleanConsecutive1(int x){
-    return 2;
+    int left_mask = x << 1;
+    int right_mask = x >> 1 & (~(1 << 31)); 
+    return x & (~(left_mask | right_mask));
 }
 /*
  * leftBitCount - returns count of number of consective 1's in
@@ -232,7 +241,34 @@ int cleanConsecutive1(int x){
  *   Rating: 4
  */
 int leftBitCount(int x) {
-  return 2;
+  
+  int shift_mask = 1 << 31;
+  int ans = 0;
+
+  int bc_16 = !(~((x & shift_mask >> 15) >> 16)) << 4;
+  ans += bc_16;
+  x <<= bc_16;
+
+  int bc_8 = !(~((x & shift_mask >> 7) >> 24)) << 3;
+  ans += bc_8;
+  x <<= bc_8;
+
+  int bc_4 = !(~((x & shift_mask >> 3) >> 28)) << 2;
+  ans += bc_4;
+  x <<= bc_4;
+
+  int bc_2 = !(~((x & shift_mask >> 1) >> 30)) << 1;
+  ans += bc_2;
+  x <<= bc_2;
+
+  int bc_1 = !(~((x & shift_mask) >> 31));
+  ans += bc_1;
+  x <<= bc_1;
+
+  ans += (x >> 31 & 1);
+
+  return ans;
+
 }
 /* 
  * counter1To5 - return 1 + x if x < 5, return 1 otherwise, we ensure that 1<=x<=5
@@ -242,7 +278,8 @@ int leftBitCount(int x) {
  *   Rating: 2
  */
 int counter1To5(int x) {
-  return 2;
+  int mask = (x + (~5 + 1)) >> 31;
+  return (x & mask) + 1;
 }
 /* 
  * sameSign - return 1 if x and y have same sign, and 0 otherwise
@@ -252,7 +289,7 @@ int counter1To5(int x) {
  *   Rating: 2
  */
 int sameSign(int x, int y) {
-  return 2;
+  return !((x >> 31) ^ (y >> 31));
 }
 /*
  * satMul3 - multiplies by 3, saturating to Tmin or Tmax if overflow
@@ -266,7 +303,15 @@ int sameSign(int x, int y) {
  *  Rating: 3
  */
 int satMul3(int x) {
-    return 2;
+    int TMin = (1 << 31);
+    int mul_2 = (x << 1);
+    int mul_3 = mul_2 + x;
+    int is_overflow = (x ^ mul_2) >> 31;
+    is_overflow |= (mul_2 ^ mul_3) >> 31;
+    int sign = x >> 31;
+    //printf("is_overflow = %.8x, sign = %.8x\n", is_overflow, sign);
+    return (mul_3 & ~is_overflow) | (is_overflow & (~sign ^ TMin ));
+
 }
 /* 
  * isGreater - if x > y  then return 1, else return 0 
@@ -276,7 +321,17 @@ int satMul3(int x) {
  *   Rating: 3
  */
 int isGreater(int x, int y) {
-  return 2;
+
+  int x_sign = x >> 31;
+  int y_sign = y >> 31;
+  int is_n_p = x_sign & ~y_sign;
+  int is_p_n = ~x_sign & y_sign;
+
+  int sum = x + (~y + 1);
+  int is_same = (!(x ^ y)) << 31 >> 31;
+  int ans = sum >> 31 | is_same;
+
+  return (((~ans) | is_p_n) & (~is_n_p)) & 1;
 }
 /* 
  * subOK - Determine if can compute x-y without overflow
@@ -287,7 +342,10 @@ int isGreater(int x, int y) {
  *   Rating: 3
  */
 int subOK(int x, int y) {
-  return 2;
+    int is_same_sign = (~(x ^ y)) >> 31;
+    int sign = (x >> 31);
+    int diff_sign = (x + (~y + 1)) >> 31;
+    return (is_same_sign | (~(sign ^ diff_sign)) ) &1;
 }
 /*
  * trueFiveEighths - multiplies by 5/8 rounding toward 0,
@@ -301,7 +359,8 @@ int subOK(int x, int y) {
  */
 int trueFiveEighths(int x)
 {
-    return 2;
+  int integer = x >> 3, fraction = x & 7;
+  return integer + (integer << 2) + ((fraction + (fraction << 2) + (x >> 31 & 7)) >> 3);
 }
 /* 
  * float_half - Return bit-level equivalent of expression 0.5*f for
@@ -315,7 +374,19 @@ int trueFiveEighths(int x)
  *   Rating: 4
  */
 unsigned float_half(unsigned uf) {
-  return 2;
+
+  int sign = uf & 0x80000000, exp = uf & 0x7f800000, frac = uf & 0x7fffff;
+  int round = !((uf & 3) ^ 3);
+  int exp_nan_mask = 0x7f800000;
+
+  if (exp_nan_mask == exp)
+    return uf;
+  if (!exp)
+    return sign | exp | ((frac >> 1) + round);
+  if ((exp >> 23) == 1)
+    return sign | (((exp | frac) >> 1) + round);
+
+  return sign | (((exp >> 23) - 1) << 23) | (frac );
 }
 /* 
  * float_i2f - Return bit-level equivalent of expression (float) x
@@ -327,7 +398,39 @@ unsigned float_half(unsigned uf) {
  *   Rating: 4
  */
 unsigned float_i2f(int x) {
-  return 2;
+  
+  if (x == 0)
+    return 0;
+
+  if (x == 0x80000000)
+    return 0xcf000000;
+
+  int sign = x & 0x80000000;
+
+  if (x < 0)
+    x = -x;
+
+  int n = 31;
+
+  while (!(x >> n))
+    n--;
+
+  int exp = n + 0x7f;
+  x <<= (31 - n);
+  int frac = (x >> 8) & 0x7fffff;
+  int round = x & 0xff;
+
+  if (round == 128 && (frac & 1)) frac+=1;
+  if (round > 128) frac+=1;
+
+  //考虑舍入后发生了进位
+  // 当第24位为1时表明发生了舍入后进位
+  if (frac >> 23) {
+    exp += 1;
+    frac &= 0x7fffff;
+  }
+
+  return sign | (exp << 23) | frac;
 }
 /* 
  * float64_f2i - Return bit-level equivalent of expression (int) f
@@ -343,7 +446,36 @@ unsigned float_i2f(int x) {
  *   Rating: 4
  */
 int float64_f2i(unsigned uf1, unsigned uf2) {
-  return 2;
+  
+  int sign = uf2 & 0x80000000;
+  int exp = uf2 & 0x7ff00000;
+  if (exp == 0x7ff00000)
+    return 0x80000000;
+
+  exp >>= 20;
+
+  int n = (exp - 1023);
+
+  if (n < 0)
+    return 0;
+
+  if (n > 30)
+    return 0x80000000;
+
+  int ans = 0;
+
+  if (n <= 20) {
+    ans = (uf2 & 0x000fffff | 0x00100000) >> (20 - n);
+  } else {
+    int offset = n - 20;
+    ans = (uf2 & 0x000fffff | 0x00100000) << offset;
+    ans |= (uf1 >> (32 - offset));
+  }
+
+  if (sign)
+    ans = ~ans + 1;
+
+  return ans;
 }
 /* 
  * float_negpwr2 - Return bit-level equivalent of the expression 2.0^-x
@@ -359,5 +491,20 @@ int float64_f2i(unsigned uf1, unsigned uf2) {
  *   Rating: 4
  */
 unsigned float_negpwr2(int x) {
-    return 2;
+    int exp = -x + 127;
+
+    // 对应所能表示的最大值
+    if (x <= -128)
+        return 0x7f800000;
+    // 对应最小值
+    if (x > 149)
+        return 0;
+
+    if (x < 127) {
+      // 规格化
+      return exp << 23;
+    }
+
+    // 非规格化
+    return 1 << (23 - (x - 126));
 }
